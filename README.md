@@ -19,7 +19,7 @@ $ python setup.py install
 
 ### Build package and generate distro file
 ```
-python setup.py sdist --formats=gztar,zip
+$ python setup.py sdist --formats=gztar,zip
 ```
 
 ### You should see something like this:
@@ -40,12 +40,12 @@ python setup.py sdist --formats=gztar,zip
 
 ### Installing the package _flask_arch-1.0.tar.zip_
 ```
-pip install flask_arch-1.0.tar.zip
+$ pip install flask_arch-1.0.tar.zip
 ```
 
 ## Running tests
 ```
-python run --tests flask_arch
+$ python run --tests flask_arch
 ```
 
 ### Generating an app template
