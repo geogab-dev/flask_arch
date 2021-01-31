@@ -1,37 +1,10 @@
-from flask_arch.base_arch import _set_root_app, _make_layer_models_dir, _make_layer_view_dir,\
-    _make_layer_templates_dir, _make_layer_utils_dir, _make_layer_services_dir, _make_layer_test_dir,\
-    _write_basics_config, _make_layer_controller_dir
+from flask_arch.base_arch import _create_app_dirs, _create_app_files_config, _flags_dict
 
 
-def generate_mtv_arch():
-    """Esta função chama as funções base do arquivo base_arch.py para gerar a arquitetura MTV
-    (MODELS - VIEWS - TEMPLATES)"""
+def generate_flask_arch():
     try:
-        _set_root_app()
-        _make_layer_models_dir()
-        _make_layer_view_dir()
-        _make_layer_templates_dir()
-        _make_layer_test_dir()
-        _make_layer_utils_dir()
-        _make_layer_services_dir()
-        _write_basics_config()
-        print('\n[ \033[32mSUCCESS\033[0m ] Successfully generated MTV arch')
-    except FileExistsError or FileNotFoundError:
-        print('\n[ ERROR ] Unsuccessfully generated MTV arch')
-
-
-def generate_mvc_arch():
-    """Esta função chama as funções base do arquivo base_arch.py para gerar a arquitetura MVC
-    (MODELS - VIEWS - CONTROLLERS)"""
-    try:
-        _set_root_app()
-        _make_layer_models_dir()
-        _make_layer_view_dir(is_mvc_arch=True)
-        _make_layer_controller_dir()
-        _make_layer_test_dir()
-        _make_layer_utils_dir()
-        _make_layer_services_dir()
-        _write_basics_config(is_mvc_arch=True)
-        print('\n[ \033[32mSUCCESS\033[0m ] Successfully generated MVC arch')
-    except FileExistsError or FileNotFoundError:
-        print('\n[ ERROR ] Unsuccessfully generated MVC arch')
+        _create_app_dirs()
+        _create_app_files_config()
+        print(f'\n{_flags_dict["flag_ok"]} Check your app template.')
+    except FileExistsError or FileNotFoundError as e:
+        raise e
