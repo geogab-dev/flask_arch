@@ -1,56 +1,62 @@
-# Flask_arch
+# flask_arch
 
-Gerador de templates para aplicações Flask
-
-
-### Pré-requisitos
-
-Python 3.7+ 
-
-IDE
+Template generator for Flask applications.
 
 
-### Instalando
+### Pré-requisites
 
+[Python 3.7+](https://www.python.org/)
 
-
+### Build package and generate distro file
 ```
-exemplo aqui
+python setup.py sdist --formats=gztar,zip
 ```
 
-
-
-## Rodando os testes
-
+### You should see something like this:
 ```
-exemplo aqui
+├─ flask_arch
+│  └─ dist
+│     ├─ flask_arch-1.0.tar.gz
+│     └─ flask_arch-1.0.tar.zip
+├─ flask_arch
+│  └─ ...
+├─ flask_arch.egg-info
+│  └─ ...
+└─ setup.py
+└─ ...
 ```
 
+### Installing the package _flask_arch-1.0.tar.zip_
+```
+pip install flask_arch-1.0.tar.zip
+```
 
+### Running tests
+```
+python run --tests flask_arch
+```
 
-## Feito com
+### Generating an app template
+ - Create a folder for your application.
+ - Open a terminal (Power Shell) and follow the commands:
+```
+C:\Users\your_user\your_app_folder> python
 
-* [Python](https://www.python.org) - Python
+>>> from flask_arch.gen_arch import generate_flask_arch
 
-## Contribuindo
+generate_flask_arch()
+```
 
-Inserir contribuições
+## With love ❤️
 
+* [Python](https://www.python.org) 🐍
 
+## Autor
 
-## Authores
+[George Gabriel](https://github.com/Geo-Gabriel) - *Initial Work* 
 
-* **GG** - *Trabalho inicial* 
+See the [contributors](https://github.com/your/project/contributors).
 
-Veja a lista de [contributores](https://github.com/your/project/contributors) que participaram deste projeto.
+## License
 
-## Licença
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Agradecimentos
-
-* Agradecimento 01
-* Inspiração
-* etc
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
