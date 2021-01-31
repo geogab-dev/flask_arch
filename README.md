@@ -55,7 +55,7 @@ generate_flask_arch()
 
 [George Gabriel](https://github.com/Geo-Gabriel) - *Initial Work* 
 
-See the [contributors](https://github.com/your/project/contributors).
+See the [contributors](https://github.com/Geo-Gabriel/flask_arch/graphs/contributors).
 
 ## License
 
