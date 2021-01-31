@@ -3,7 +3,7 @@
 Template generator for Flask applications.
 
 
-### Pré-requisites
+### Pre-requisites
 
 [Python 3.7+](https://www.python.org/)
 
