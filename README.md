@@ -63,6 +63,8 @@ $ python -m flask_arch init
 
 [George Gabriel](https://github.com/Geo-Gabriel) - *Initial Work* 
 
+[Douglas Silva](https://github.com/douugbr) - *Contributor* 
+
 See the [contributors](https://github.com/Geo-Gabriel/flask_arch/graphs/contributors).
 
 ## License
