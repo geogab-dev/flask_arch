@@ -3,13 +3,23 @@
 Template generator for Flask applications.
 
 
-### Pré-requisites
+## Pre-requisites
 
 [Python 3.7+](https://www.python.org/)
 
+## Installing via setup.py
+
+Clone this repository inside a local folder and run the following commands on a terminal:
+```
+$ cd [LOCAL REPOSITORY PATH]
+$ python setup.py install
+```
+
+## Installing via package building
+
 ### Build package and generate distro file
 ```
-python setup.py sdist --formats=gztar,zip
+$ python setup.py sdist --formats=gztar,zip
 ```
 
 ### You should see something like this:
@@ -26,36 +36,34 @@ python setup.py sdist --formats=gztar,zip
 └─ ...
 ```
 
+[comment]: <> (For the author: please upload this project to https://pypi.org, much easier!)
+
 ### Installing the package _flask_arch-1.0.tar.zip_
 ```
-pip install flask_arch-1.0.tar.zip
+$ pip install flask_arch-1.0.tar.zip
 ```
 
-### Running tests
+## Running tests
 ```
-python run --tests flask_arch
+$ python run --tests flask_arch
 ```
 
 ### Generating an app template
  - Create a folder for your application.
- - Open a terminal (Power Shell) and follow the commands:
+ - Open a terminal (powershell, cmd, bash, etc) inside the folder and run the following command:
 ```
-C:\Users\your_user\your_app_folder> python
-
->>> from flask_arch.gen_arch import generate_flask_arch
-
-generate_flask_arch()
+$ python -m flask_arch init
 ```
 
 ## With love ❤️
 
 * [Python](https://www.python.org) 🐍
 
-## Autor
+## Author
 
 [George Gabriel](https://github.com/Geo-Gabriel) - *Initial Work* 
 
-See the [contributors](https://github.com/your/project/contributors).
+See the [contributors](https://github.com/Geo-Gabriel/flask_arch/graphs/contributors).
 
 ## License
 
