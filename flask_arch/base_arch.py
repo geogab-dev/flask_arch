@@ -16,7 +16,7 @@ _files_dict = {
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n\t<link rel="stylesheet" href="#">\n\t<meta charset="UTF-8">'
         '\n\t<title>Untitled</title>\n</head>\n<body>\n\n\n</body>\n</html>'
     ],
-    'config.py': [
+    'configmodule.py': [
         'class Config(object):\n\t"""Base config, uses staging database server."""\n\tDEBUG = False'
         '\n\tTESTING = False\n\tDB_SERVER = "192.168.0.1"\n\tSECRET_KEY = "your_secret_key_here"\n\n\t@property'
         '\n\tdef DATABASE_URI(self):       # Note: all caps\n\t\treturn "mysql://user@{}/foo".format(self.DB_SER'
